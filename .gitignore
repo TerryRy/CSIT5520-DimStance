@@ -1,1 +1,10 @@
 *.DS_Store
+.conda
+.history
+test.py
+model/
+result*
+img/
+__pycache__/
+checkpoints/
+checkpoints*
