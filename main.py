@@ -18,12 +18,13 @@ if __name__ == '__main__':
     predict_url = f"./task-dataset/track_b/{subtask}/{lang}/{lang}_{domain}_dev_{task}.jsonl"
 
     #model config
-    model_name = "bert-base-multilingual-cased"
+    # model_name = "bert-base-multilingual-cased"
     # model_name = "answerdotai/ModernBERT-base"
     # model_name = "microsoft/deberta-v3-base"
+    model_name = "sentence-transformers/LaBSE"
     is_eval = False
     pooling = False
-    batch_size = 64
+    batch_size = 32
     # 由于我事先没想到要加batch_size的组，所以保存文件名上没有对无掩码32组和64组进行区分。现有的文件是生成后手动修改文件名，还请注意不要误替换
 
     safe_model_name = model_name.replace("/", "_")

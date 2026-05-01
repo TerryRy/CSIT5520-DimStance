@@ -1,0 +1,56 @@
+For example
+Input:
+Text: Now what ? Is there still a business model that works for EV charging even if its more expensive ?
+Aspects: EV charging
+Output
+{
+  "Aspect_VA": [
+    {"Aspect": "EV charging", "VA": "4.12#4.00"}
+  ]
+}
+
+Input:
+Text: Nuclear energy is awesome ! If you have a nuclear plant up and running it’s one of the cheapest sources of electricity incredibly low CO2 production through the whole supply chain as well as incredibly high safety standards. If we could turn all the electricity in the world over to nuclear it would be amazing for the the climate. However building a nuclear power plant is very expensive and technically demanding.
+Aspects: Nuclear energy, supply chain, nuclear power plant
+Output
+{
+  "Aspect_VA": [
+    {"Aspect": "Nuclear energy", "VA": "8.00#7.83"},
+    {"Aspect": "supply chain", "VA": "7.62#7.50"},
+    {"Aspect": "nuclear power plant", "VA": "4.80#6.20"}
+  ]
+}
+
+Input:
+Text: Absolutely modern nuclear energy is FAR FAR safer than Cold War era nuclear energy and it’s cleaner than coal. Coal fire plants emit about 100 times more radiation into the environment than a nuke plant that has created the same amount of energy. Also a 1 inch pellet of enriched uranium can create the same amount of energy as 1 ton of coal. As well as all the other heavy metals released in the coal ash.
+Aspects: Cold War era nuclear energy, 1 inch pellet of enriched uranium, coal ash
+Output
+{
+  "Aspect_VA": [
+    {"Aspect": "Cold War era nuclear energy", "VA": "2.33#7.50"},
+    {"Aspect": "1 inch pellet of enriched uranium", "VA": "7.12#7.38"},
+    {"Aspect": "coal ash", "VA": "2.67#6.83"}
+  ]
+}
+
+Input:
+Text: I would be willing to donate in this fight against the EPA. I would say the government is not of the people. I cant imagine any american want to lose chemical protections. We need to sue the companies also that will dump them.
+Aspects: EPA, government, chemical protections
+Output
+{
+  "Aspect_VA": [
+    {"Aspect": "EPA", "VA": "2.90#5.20"},
+    {"Aspect": "government", "VA": "2.83#6.67"},
+    {"Aspect": "chemical protections", "VA": "7.00#7.50"}
+  ]
+}
+
+Input:
+Text: The EPA’s new head toxicologist once told Congress he disagreed with the EPA’s evaluation of mercury as toxic. Nice.
+Aspects: toxicologist
+Output
+{
+  "Aspect_VA": [
+    {"Aspect": "toxicologist", "VA": "2.67#6.67"}
+  ]
+}
